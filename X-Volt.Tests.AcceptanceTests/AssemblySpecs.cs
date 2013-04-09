@@ -17,8 +17,6 @@ namespace Xvolt.Tests.AcceptanceTests
                 .With(Project.Named("X-Volt"));
                 //.ApplyWebConfigTransformForConfig("Test");
 
-            //TODO: The order of registration matters right now, but it shouldn't. 
-            //config.RegisterArea<TasksAreaRegistration>();
             config.BuildRoutesUsing(RouteConfig.RegisterRoutes);
 
             //NOTE: You can use whatever browser you want.  For build servers, you can check an environment
