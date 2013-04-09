@@ -142,12 +142,6 @@
     <None Include="Properties\PublishProfiles\x-volt - Web Deploy.pubxml" />
     <Content Include="Views\Shared\Site.Master" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\X-Volt.Core\X-Volt.Core.csproj">
-      <Project>{9209993b-57c9-4e53-9770-f992cd7e87fc}</Project>
-      <Name>X-Volt.Core</Name>
-    </ProjectReference>
-  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

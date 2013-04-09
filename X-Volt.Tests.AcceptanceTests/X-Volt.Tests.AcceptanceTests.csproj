@@ -7,7 +7,7 @@
     <ProjectGuid>{45144FC3-1E70-4A36-B955-A6CD05C4B9D0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>X_Volt.Tests.AcceptanceTests</RootNamespace>
+    <RootNamespace>Xvolt.Tests.AcceptanceTests</RootNamespace>
     <AssemblyName>X-Volt.Tests.AcceptanceTests</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

@@ -1,9 +1,8 @@
 ﻿using NUnit.Framework;
 using SpecsFor.Mvc;
-using Xvolt;
 using Xvolt.App_Start;
 
-namespace X_Volt.Tests.AcceptanceTests
+namespace Xvolt.Tests.AcceptanceTests
 {
     [SetUpFixture]
     public class AssemblySpecs

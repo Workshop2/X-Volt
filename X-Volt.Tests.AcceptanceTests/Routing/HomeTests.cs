@@ -4,8 +4,7 @@ using SpecsFor.Mvc;
 using SpecsFor;
 using Xvolt.Controllers;
 
-
-namespace X_Volt.Tests.AcceptanceTests.Routing
+namespace Xvolt.Tests.AcceptanceTests.Routing
 {
     public static class HomeTests
     {
