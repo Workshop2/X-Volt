@@ -11,7 +11,7 @@ namespace Xvolt.Web
         {
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/1.0/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }

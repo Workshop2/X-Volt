@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xvolt.Tests.IntegrationTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xvolt.Tests.AcceptanceTests", "Tests\Xvolt.Tests.AcceptanceTests\Xvolt.Tests.AcceptanceTests.csproj", "{1946D994-D3DB-4803-A4F0-E564570280E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xvolt.Domain", "Xvolt.Domain\Xvolt.Domain.csproj", "{30ADB576-D12E-47D2-8058-57332487DA24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xvolt.Domain.Data", "Xvolt.Domain.Data\Xvolt.Domain.Data.csproj", "{56DAC7AF-7912-495C-A842-B0AAFBC81C2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{1946D994-D3DB-4803-A4F0-E564570280E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1946D994-D3DB-4803-A4F0-E564570280E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1946D994-D3DB-4803-A4F0-E564570280E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30ADB576-D12E-47D2-8058-57332487DA24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30ADB576-D12E-47D2-8058-57332487DA24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30ADB576-D12E-47D2-8058-57332487DA24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30ADB576-D12E-47D2-8058-57332487DA24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56DAC7AF-7912-495C-A842-B0AAFBC81C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56DAC7AF-7912-495C-A842-B0AAFBC81C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56DAC7AF-7912-495C-A842-B0AAFBC81C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56DAC7AF-7912-495C-A842-B0AAFBC81C2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

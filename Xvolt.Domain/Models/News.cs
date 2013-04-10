@@ -1,4 +1,4 @@
-﻿namespace Xvolt.Web.Models
+﻿namespace Xvolt.Domain.Models
 {
     public class News
     {

@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Xvolt.Web.Models.News>
+﻿@model Xvolt.Web.ViewModels.Home.IndexViewModel
 
 @{
     ViewBag.Title = "Index";
@@ -7,13 +7,14 @@
 
 <h2>Index</h2>
 
+<h2>@Model.Shhh</h2>
 
 <table>
     <tr>
         <th></th>
     </tr>
-
-@foreach (var item in Model) {
+    
+@foreach (var item in Model.NewsItems) {
     <tr>
         <td>
             @item.Title
