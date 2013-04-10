@@ -13,14 +13,13 @@ namespace Xvolt.Tests.AcceptanceTests.Routing
         {
             protected override void When()
             {
-                Debugger.Break();
                 SUT.NavigateTo<HomeController>(x => x.Index());
             }
 
             [Test]
             public void then_route_should_map_to_index_page()
             {
-                //SUT.Route.ShouldMapTo<HomeController>(x => x.Index());
+                SUT.Route.ShouldMapTo<HomeController>(x => x.Index());
             }
         }
     }
