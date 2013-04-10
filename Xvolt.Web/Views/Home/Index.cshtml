@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Xvolt.Web.Models.News>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Site.Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+
+<table>
+    <tr>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @item.Title
+        </td>
+    </tr>
+}
+
+</table>
