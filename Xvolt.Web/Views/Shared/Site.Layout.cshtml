@@ -1,13 +1,97 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
 
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    @Styles.Render("~/bundles/jquery-style")
+    @Scripts.Render("~/bundles/jquery")
+
+    <style type="text/css">
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .main {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        .menu-wrapper {
+            color: white;
+        }
+
+        .menu-links-outer {
+            background-color: #F58CC4;
+            /*float:left; 
+            width:100%; */
+            margin-right: 130px;
+            margin-top: 10px;
+            height: 120px;
+            position: relative;
+        }
+
+        .menu-live-tile {
+            background-color: #158CC4;
+            float:right;
+            width:120px;
+            height: 120px;
+        }
+        
+        .menu-links-inner {
+            background-color: #adff2f;
+            position:absolute; 
+            bottom:0;
+            padding: 15px 0 15px 0;
+            margin-right: -15px;
+            width: 100%;
+        }
+
+/*        .menu-wrapper {
+            color: white;
+            margin: 20px 0;
+            float: left;
+        }
+
+        .menu {
+            width: 720px;
+            float: left;
+            background-color: #158CC4;
+            padding: 15px;
+            margin-top: 70px;
+        }
+
+        .menu-live-tile {
+            height: 120px;
+            width: 120px;
+            float: left;
+            background-color: #158CC4;
+            margin-left: 10px;
+        }*/
+
+        .content {
+            /*float: left;*/
+        }
+    </style>
 </head>
 <body>
-    <div>
-        @RenderBody()
+    <div class="main">
+        <div class="menu-wrapper">
+            <div class="menu-live-tile">
+                I am the live tile
+            </div>
+            <div class="menu-links-outer">
+                <div class="menu-links-inner">
+                    test
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            @RenderBody()
+        </div>
     </div>
 </body>
 </html>
