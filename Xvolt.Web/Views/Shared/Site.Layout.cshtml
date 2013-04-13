@@ -24,7 +24,7 @@
         }
 
         .menu-links-outer {
-            background-color: #F58CC4;
+            /*background-color: #F58CC4;*/
             /*float:left; 
             width:100%; */
             margin-right: 130px;
@@ -41,38 +41,35 @@
         }
         
         .menu-links-inner {
-            background-color: #adff2f;
+            background-color: #158CC4;
             position:absolute; 
             bottom:0;
-            padding: 15px 0 15px 0;
+            /*padding: 15px 0 15px 0;*/
             margin-right: -15px;
             width: 100%;
         }
 
-/*        .menu-wrapper {
+        .menu-links-inner ul {
+	        margin: 0;
+	        padding: 10px;
+	        text-align: left;
+	        list-style: none;
+        }
+
+        .menu-links-inner ul li {
+            display: inline;
+            list-style-type: none;
+            /*margin: 15px;*/
+        }
+
+        .menu-links-inner ul li a {
+	        text-decoration: none;
             color: white;
-            margin: 20px 0;
-            float: left;
         }
-
-        .menu {
-            width: 720px;
-            float: left;
-            background-color: #158CC4;
-            padding: 15px;
-            margin-top: 70px;
-        }
-
-        .menu-live-tile {
-            height: 120px;
-            width: 120px;
-            float: left;
-            background-color: #158CC4;
-            margin-left: 10px;
-        }*/
-
-        .content {
-            /*float: left;*/
+        
+        .menu-links-inner ul li:hover {
+	        background: #BBBBBB;
+	        color: #FFFFFF;
         }
     </style>
 </head>
@@ -84,7 +81,14 @@
             </div>
             <div class="menu-links-outer">
                 <div class="menu-links-inner">
-                    test
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
