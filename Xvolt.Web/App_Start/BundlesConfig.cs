@@ -6,27 +6,40 @@ namespace Xvolt.Web
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            SetupJquery(bundles);
+            SetupJqueryBundle(bundles);
+            SetupSiteBundle(bundles);
         }
 
-        private static void SetupJquery(BundleCollection bundles)
+        private static void SetupJqueryBundle(BundleCollection bundles)
         {
             // Javascript
-            var jqueryScript = new[] 
+            var scripts = new[] 
             { 
                 "~/Scripts/jquery-{version}.js", 
                 "~/Scripts/jquery.metrojs.js" 
             };
 
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(jqueryScript));
+            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(scripts));
 
             // CSS/Styles
-            var jqueryStyles = new[] 
+            var styles = new[] 
             { 
                 "~/Styles/jquery.metrojs.css" 
             };
 
-            bundles.Add(new StyleBundle("~/bundles/jquery-style").Include(jqueryStyles));
+            bundles.Add(new StyleBundle("~/bundles/jquery-style").Include(styles));
+        }
+
+        private static void SetupSiteBundle(BundleCollection bundles)
+        {
+            // CSS/Styles
+            var styles = new[] 
+            { 
+                "~/Styles/site.css",
+                "~/Styles/background.css"
+            };
+
+            bundles.Add(new StyleBundle("~/bundles/site-style").Include(styles));
         }
     }
 }

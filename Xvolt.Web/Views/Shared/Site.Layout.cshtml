@@ -6,81 +6,25 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/bundles/jquery-style")
+    @Styles.Render("~/bundles/site-style")
     @Scripts.Render("~/bundles/jquery")
-
-    <style type="text/css">
-        html, body {
-            padding: 0;
-            margin: 0;
-        }
-
-        .main {
-            /*width: 900px;*/
-            max-width: 1200px;
-            min-width: 600px;
-            margin: 0 auto;
-            padding: 0 40px;
-        }
-
-        .menu-wrapper {
-            color: white;
-        }
-
-        .menu-links-outer {
-            /*background-color: #F58CC4;*/
-            /*float:left; 
-            width:100%; */
-            margin-right: 130px;
-            margin-top: 10px;
-            height: 120px;
-            position: relative;
-        }
-
-        .menu-live-tile {
-            background-color: #158CC4;
-            float:right;
-            width:120px;
-            height: 120px;
-        }
-        
-        .menu-links-inner {
-            background-color: #158CC4;
-            position:absolute; 
-            bottom:0;
-            /*padding: 15px 0 15px 0;*/
-            margin-right: -15px;
-            width: 100%;
-        }
-
-        .menu-links-inner ul {
-	        margin: 0;
-	        padding: 10px;
-	        text-align: left;
-	        list-style: none;
-        }
-
-        .menu-links-inner ul li {
-            display: inline;
-            list-style-type: none;
-            /*margin: 15px;*/
-        }
-
-        .menu-links-inner ul li a {
-	        text-decoration: none;
-            color: white;
-        }
-        
-        .menu-links-inner ul li:hover {
-	        background: #BBBBBB;
-	        color: #FFFFFF;
-        }
-    </style>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".live-tile, .flip-list").not(".exclude").liveTile();
+        });
+    </script>
 </head>
-<body>
+<body class="gradient">
     <div class="main">
         <div class="menu-wrapper">
-            <div class="menu-live-tile">
-                I am the live tile
+            <div class="menu-live-tile live-tile blue" data-mode="flip" data-delay="5000" data-speed="300" data-initdelay="5000">
+                <div>
+                    <span class="tile-title">X-Volt Studios</span>
+                </div>
+                <div class="live-tile-image">
+                    <span class="tile-title">Simon Colmer</span>
+                </div>
             </div>
             <div class="menu-links-outer">
                 <div class="menu-links-inner">
@@ -96,9 +40,9 @@
             </div>
         </div>
 
-        <div class="content">
-            @RenderBody()
-        </div>
+    <div class="content">
+        @RenderBody()
+    </div>
     </div>
 </body>
 </html>
