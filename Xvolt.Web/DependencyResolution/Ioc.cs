@@ -1,10 +1,18 @@
-﻿namespace Xvolt.Web.DependencyResolution
+﻿using StructureMap;
+using Xvolt.Domain.Data.Repositories;
+using Xvolt.Domain.Repositories;
+
+namespace Xvolt.Web.DependencyResolution
 {
     public static class Ioc
     {
-         public static void Setup()
-         {
-             //TODO: Put FOR methods in here
-         }
+        public static void Setup()
+        {
+            ObjectFactory.Initialize(x =>
+            {
+                x.For<INewsArticleRepository>().Use<NewsArticleRepository>();
+                x.For<IUserRepository>().Use<UserRepository>();
+            });
+        }
     }
 }

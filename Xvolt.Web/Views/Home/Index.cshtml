@@ -7,10 +7,10 @@
 
 <h2>Index</h2>
 
-<h2>@Model.Shhh</h2>
-
 <table>
     <tr>
+        <th></th>
+        <th></th>
         <th></th>
     </tr>
     
@@ -19,6 +19,8 @@
         <td>
             @item.Title
         </td>
+        <td>@item.Author.Username</td>
+        <td>@item.Content.TrimmedArticle</td>
     </tr>
 }
 

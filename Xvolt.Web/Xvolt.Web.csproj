@@ -115,6 +115,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\1.0\NewsArticleController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DependencyResolution\Ioc.cs" />
     <Compile Include="Global.asax.cs">
@@ -143,7 +144,6 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Api\1.0\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
