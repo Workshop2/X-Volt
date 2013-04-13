@@ -38,8 +38,9 @@ a {
 }
 
     .menu-live-tile .live-tile-image {
-        background-image: url('/images/liveTile.png');
+        background-image: url('/images/liveTile.jpg');
         /*background-position: 0 -20px;*/
+        /*http://avatar.xboxlive.com/avatar/workshop2/avatar-body.png*/
     }
 
 .menu-links-inner {
