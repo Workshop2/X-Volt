@@ -4,76 +4,94 @@
     font-family: "Segoe UI", "Segoe UI", "Lato", sans-serif;
 }
 
-a {
-    text-decoration: none;
-}
-
-.main {
-    /*width: 900px;*/
+.center {
     max-width: 1200px;
-    min-width: 770px;
+    min-width: 770px; /* REMEMBER TO CHANGE .content-wrapper WHEN MODIFYING min-width OR PADDING */
     margin: 0 auto;
     padding: 0 100px;
 }
+
+/*-----------------------------------------------------------------*/
+/*                              MENU                               */
+/*-----------------------------------------------------------------*/
+
 
 .menu-wrapper {
     color: white;
 }
 
-.menu-links-outer {
-    /*background-color: #F58CC4;*/
-    /*float:left; 
-            width:100%; */
-    margin-right: 130px;
-    margin-top: 10px;
-    height: 120px;
-    position: relative;
-}
-
-.menu-live-tile {
-    background-color: #1BA1E2;
-    float: right;
-    width: 120px;
-    height: 120px;
-}
-
-    .menu-live-tile .live-tile-image {
-        background-image: url('/images/liveTile.jpg');
-        /*background-position: 0 -20px;*/
-        /*http://avatar.xboxlive.com/avatar/workshop2/avatar-body.png*/
+    .menu-wrapper a {
+        text-decoration: none;
     }
 
-.menu-links-inner {
-    background-color: #1BA1E2;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    /*padding: 15px 0 15px 0;*/
-    margin-right: -15px;
-    width: 100%;
-}
-
-    .menu-links-inner ul {
-        display: block;
-        margin: 0;
-        padding: 0;
-        line-height: 40px;
-        overflow: hidden;
+    .menu-wrapper .menu-links-outer {
+        margin-right: 130px;
+        margin-top: 10px;
+        height: 120px;
+        position: relative;
     }
 
-        .menu-links-inner ul li {
-            float: left;
-            list-style: none;
-            margin-right: 14.285714285714286px;
+    .menu-wrapper .menu-live-tile {
+        background-color: #1BA1E2;
+        float: right;
+        width: 120px;
+        height: 120px;
+    }
+
+        .menu-wrapper .menu-live-tile .live-tile-image {
+            background-image: url('/images/liveTile.jpg');
+            /*background-position: 0 -20px;
+            http://avatar.xboxlive.com/avatar/workshop2/avatar-body.png*/
         }
 
-            .menu-links-inner ul li a {
-                display: block;
-                padding: 0 20px;
-                white-space: nowrap;
-                color: #fff;
+    .menu-wrapper .menu-links-inner {
+        background-color: #1BA1E2;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-right: -15px;
+        width: 100%;
+    }
+
+        .menu-wrapper .menu-links-inner ul {
+            display: block;
+            margin: 0;
+            padding: 0;
+            line-height: 40px;
+            overflow: hidden;
+        }
+
+            .menu-wrapper .menu-links-inner ul li {
+                float: left;
+                list-style: none;
+                margin-right: 14.285714285714286px;
             }
 
-            .menu-links-inner ul li:hover {
-                background-color: #1AB1E2;
-            }
+                .menu-wrapper .menu-links-inner ul li a {
+                    display: block;
+                    padding: 0 20px;
+                    white-space: nowrap;
+                    color: #fff;
+                }
+
+                .menu-wrapper .menu-links-inner ul li:hover {
+                    background-color: #1AB1E2;
+                }
+
+/*-----------------------------------------------------------------*/
+/*                            CONTENT                              */
+/*-----------------------------------------------------------------*/
+
+.content-wrapper {
+    background-color: #E5E5E5;
+    min-height: 600px;
+    width: 100%;
+    /* REMEMBER TO CHANGE THIS WHEN CHANGING CENTER MIN-WIDTH / PADDING */
+    /* (center.min-width + padding * 2) */
+    /* 770 + (100*2) */
+    min-width: 970px;
+}
+
+    .content-wrapper .content-inner {
+        padding-top: 10px;
+    }

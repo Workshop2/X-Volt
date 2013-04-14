@@ -8,41 +8,41 @@
     @Styles.Render("~/bundles/jquery-style")
     @Styles.Render("~/bundles/site-style")
     @Scripts.Render("~/bundles/jquery")
-    
+
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".live-tile, .flip-list").not(".exclude").liveTile();
         });
     </script>
 </head>
 <body class="gradient">
-    <div class="main">
-        <div class="menu-wrapper">
-            <div class="menu-live-tile live-tile blue" data-mode="flip" data-delay="5000" data-speed="300" data-initdelay="5000">
-                <div>
-                    <span class="tile-title">X-Volt Studios</span>
-                </div>
-                <div class="live-tile-image">
-                    <span class="tile-title">Simon Colmer</span>
-                </div>
+    <div class="center menu-wrapper">
+        <div class="menu-live-tile live-tile blue" data-mode="flip" data-delay="5000" data-speed="300" data-initdelay="2000">
+            <div>
+                <span class="tile-title">X-Volt Studios</span>
             </div>
-            <div class="menu-links-outer">
-                <div class="menu-links-inner">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Media</a></li>
-                        <li><a href="#">Downloads</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+            <div class="live-tile-image">
+                <span class="tile-title">Simon Colmer</span>
             </div>
         </div>
-
-    <div class="content">
-        @RenderBody()
+        <div class="menu-links-outer">
+            <div class="menu-links-inner">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
+
+    <div class="content-wrapper">
+        <div class="center content-inner">
+            @RenderBody()
+        </div>
     </div>
 </body>
 </html>
