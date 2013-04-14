@@ -8,13 +8,17 @@ a {
     text-decoration: none;
 }
 
-.main {
+.center {
     /*width: 900px;*/
     max-width: 1200px;
     min-width: 770px;
     margin: 0 auto;
     padding: 0 100px;
 }
+
+/*-----------------------------------------------------------------*/
+/*                              MENU                               */
+/*-----------------------------------------------------------------*/
 
 .menu-wrapper {
     color: white;
@@ -77,3 +81,15 @@ a {
             .menu-links-inner ul li:hover {
                 background-color: #1AB1E2;
             }
+
+/*-----------------------------------------------------------------*/
+/*                            CONTENT                              */
+/*-----------------------------------------------------------------*/
+
+.content-wrapper {
+    background-color: #E2E2E2;
+    min-height: 600px;
+}
+
+    .content-wrapper .content {
+    }

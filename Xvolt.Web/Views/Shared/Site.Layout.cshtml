@@ -8,15 +8,15 @@
     @Styles.Render("~/bundles/jquery-style")
     @Styles.Render("~/bundles/site-style")
     @Scripts.Render("~/bundles/jquery")
-    
+
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             $(".live-tile, .flip-list").not(".exclude").liveTile();
         });
     </script>
 </head>
 <body class="gradient">
-    <div class="main">
+    <div class="center">
         <div class="menu-wrapper">
             <div class="menu-live-tile live-tile blue" data-mode="flip" data-delay="5000" data-speed="300" data-initdelay="5000">
                 <div>
@@ -40,9 +40,11 @@
             </div>
         </div>
 
-    <div class="content">
-        @RenderBody()
     </div>
+    <div class="content-wrapper">
+        <div class="content center">
+            @RenderBody()
+        </div>
     </div>
 </body>
 </html>
