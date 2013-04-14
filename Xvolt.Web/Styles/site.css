@@ -132,7 +132,7 @@ html, body {
 }
 
     .footer-outer .footer-inner {
-        height: 50px;
+        padding-top: 12px;
         color: #E5E5E5;
         text-align: center;
     }
