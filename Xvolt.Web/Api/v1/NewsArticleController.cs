@@ -10,7 +10,7 @@ using Xvolt.Domain.Repositories;
 
 namespace Xvolt.Web.Api.v1
 {
-    public class NewsArticleController : ApiController
+    public class NewsArticleController : ApiController, IApi<NewsArticle>
     {
         // GET api/newsarticle
         public IEnumerable<NewsArticle> Get()

@@ -3,11 +3,8 @@ using Xvolt.Domain.Models;
 
 namespace Xvolt.Domain.Repositories
 {
-    public interface INewsArticleRepository
+    public interface INewsArticleRepository : IRepository<NewsArticle>
     {
-        NewsArticle Get(int id);
-        IEnumerable<NewsArticle> List();
-        void Save(NewsArticle user);
-        void Delete(NewsArticle user);
+
     }
 }

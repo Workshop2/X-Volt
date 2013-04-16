@@ -124,6 +124,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\v1\IApi.cs" />
     <Compile Include="Api\v1\NewsArticleController.cs" />
     <Compile Include="App_Start\BundlesConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />

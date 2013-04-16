@@ -3,11 +3,8 @@ using Xvolt.Domain.Models;
 
 namespace Xvolt.Domain.Repositories
 {
-    public interface IImageRepository
+    public interface IImageRepository : IRepository<Image>
     {
-        Image Get(int id);
-        IEnumerable<Image> List();
-        void Save(Image user);
-        void Delete(Image user);
+
     }
 }

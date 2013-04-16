@@ -6,14 +6,14 @@ using Xvolt.Domain.Repositories;
 
 namespace Xvolt.Domain.Data.Repositories
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : RepositoryBase, IUserRepository
     {
         public User Get(int id)
         {
             return List().First(x => x.Id == id);
         }
 
-        public IEnumerable<User> List()
+        public IQueryable<User> List()
         {
             return new List<User>
             {
@@ -44,7 +44,7 @@ namespace Xvolt.Domain.Data.Repositories
                     Id = 3,
                     Username = "TestUser3"
                 }
-            };
+            }.AsQueryable();
         }
 
         public void Save(User user)
@@ -53,6 +53,11 @@ namespace Xvolt.Domain.Data.Repositories
         }
 
         public void Delete(User user)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public bool SaveChanges()
         {
             throw new System.NotImplementedException();
         }
