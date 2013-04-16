@@ -15,14 +15,14 @@ namespace Xvolt.Web
     {
         protected void Application_Start()
         {
+            DependencyResolution.Ioc.Setup();
+
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundlesConfig.RegisterBundles(BundleTable.Bundles);
-
-            DependencyResolution.Ioc.Setup();
         }
     }
 }
