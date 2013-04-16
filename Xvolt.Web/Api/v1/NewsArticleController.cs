@@ -8,7 +8,7 @@ using StructureMap;
 using Xvolt.Domain.Models;
 using Xvolt.Domain.Repositories;
 
-namespace Xvolt.Web.Api._1._0
+namespace Xvolt.Web.Api.v1
 {
     public class NewsArticleController : ApiController
     {

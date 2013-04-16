@@ -26,7 +26,8 @@ namespace Xvolt.Domain.Data.Repositories
                     Title = "News Item 1",
                     OriginalPublishDate = DateTime.Now,
                     Visible = true,
-                    Content = contentRepo.Get(1)
+                    Content = contentRepo.Get(1),
+                    Id = 1
                 },
                 new NewsArticle
                 {
@@ -34,7 +35,8 @@ namespace Xvolt.Domain.Data.Repositories
                     Title = "News Item 2",
                     OriginalPublishDate = DateTime.Now,
                     Visible = true,
-                    Content = contentRepo.Get(2)
+                    Content = contentRepo.Get(2),
+                    Id = 2
                 },
                 new NewsArticle
                 {
@@ -42,7 +44,8 @@ namespace Xvolt.Domain.Data.Repositories
                     Title = "News Item 3",
                     OriginalPublishDate = DateTime.Now,
                     Visible = true,
-                    Content = contentRepo.Get(3)
+                    Content = contentRepo.Get(3),
+                    Id = 3
                 }
             };
         }
