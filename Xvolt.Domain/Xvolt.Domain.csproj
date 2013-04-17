@@ -48,6 +48,7 @@
     <Compile Include="Repositories\IImageRepository.cs" />
     <Compile Include="Repositories\INewsArticleRepository.cs" />
     <Compile Include="Repositories\INewsContentRepository.cs" />
+    <Compile Include="Repositories\IRepository.cs" />
     <Compile Include="Repositories\IUserRepository.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

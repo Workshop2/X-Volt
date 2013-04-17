@@ -6,14 +6,14 @@ using Xvolt.Domain.Repositories;
 
 namespace Xvolt.Domain.Data.Repositories
 {
-    public class NewsArticleRepository : INewsArticleRepository
+    public class NewsArticleRepository : RepositoryBase, INewsArticleRepository
     {
         public NewsArticle Get(int id)
         {
             return List().First(x => x.Id == id);
         }
 
-        public IEnumerable<NewsArticle> List()
+        public IQueryable<NewsArticle> List()
         {
             var userRepo = new UserRepository();
             var contentRepo = new NewsContentRepository();
@@ -26,7 +26,8 @@ namespace Xvolt.Domain.Data.Repositories
                     Title = "News Item 1",
                     OriginalPublishDate = DateTime.Now,
                     Visible = true,
-                    Content = contentRepo.Get(1)
+                    Content = contentRepo.Get(1),
+                    Id = 1
                 },
                 new NewsArticle
                 {
@@ -34,7 +35,8 @@ namespace Xvolt.Domain.Data.Repositories
                     Title = "News Item 2",
                     OriginalPublishDate = DateTime.Now,
                     Visible = true,
-                    Content = contentRepo.Get(2)
+                    Content = contentRepo.Get(2),
+                    Id = 2
                 },
                 new NewsArticle
                 {
@@ -42,9 +44,10 @@ namespace Xvolt.Domain.Data.Repositories
                     Title = "News Item 3",
                     OriginalPublishDate = DateTime.Now,
                     Visible = true,
-                    Content = contentRepo.Get(3)
+                    Content = contentRepo.Get(3),
+                    Id = 3
                 }
-            };
+            }.AsQueryable();
         }
 
         public void Save(NewsArticle user)
@@ -55,6 +58,11 @@ namespace Xvolt.Domain.Data.Repositories
         public void Delete(NewsArticle user)
         {
             throw new System.NotImplementedException();
+        }
+
+        public bool SaveChanges()
+        {
+            throw new NotImplementedException();
         }
     }
 }

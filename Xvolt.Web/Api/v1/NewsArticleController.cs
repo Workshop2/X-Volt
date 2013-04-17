@@ -3,9 +3,9 @@ using System.Web.Http;
 using Xvolt.Domain.Models;
 using Xvolt.Domain.Repositories;
 
-namespace Xvolt.Web.Api._1._0
+namespace Xvolt.Web.Api.v1
 {
-    public class NewsArticleController : ApiController
+    public class NewsArticleController : ApiController, IApi<NewsArticle>
     {
         private INewsArticleRepository Repository { get; set; }
 

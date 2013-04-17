@@ -5,14 +5,14 @@ using Xvolt.Domain.Repositories;
 
 namespace Xvolt.Domain.Data.Repositories
 {
-    public class NewsContentRepository : INewsContentRepository
+    public class NewsContentRepository : RepositoryBase, INewsContentRepository
     {
         public NewsContent Get(int id)
         {
             return List().First(x => x.Id == id);
         }
 
-        public IEnumerable<NewsContent> List()
+        public IQueryable<NewsContent> List()
         {
             return new List<NewsContent>
             {
@@ -34,7 +34,7 @@ namespace Xvolt.Domain.Data.Repositories
                     FullArticle = FullText,
                     TrimmedArticle = TrimmedText
                 }
-            };
+            }.AsQueryable();
         }
 
         public void Save(NewsContent user)
@@ -43,6 +43,11 @@ namespace Xvolt.Domain.Data.Repositories
         }
 
         public void Delete(NewsContent user)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public bool SaveChanges()
         {
             throw new System.NotImplementedException();
         }

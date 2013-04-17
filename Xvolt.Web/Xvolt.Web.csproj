@@ -124,10 +124,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Api\1.0\NewsArticleController.cs" />
+    <Compile Include="Api\v1\IApi.cs" />
+    <Compile Include="Api\v1\NewsArticleController.cs" />
     <Compile Include="App_Start\BundlesConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DependencyResolution\Ioc.cs" />
+    <Compile Include="DependencyResolution\StructureMapControllerFactory .cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
