@@ -146,9 +146,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
+    <None Include="Properties\PublishProfiles\x-volt - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\x-volt - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Images\liveTile.jpg" />
     <Content Include="Images\liveTile.png" />
+    <Content Include="Images\logoText.png" />
+    <Content Include="Images\logo.png" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery.metrojs.js" />
