@@ -13,9 +13,9 @@ html, body {
 
 .center {
     max-width: 1200px;
-    min-width: 770px; /* REMEMBER TO CHANGE .background-fill WHEN MODIFYING min-width OR PADDING */
+    min-width: 770px; /* REMEMBER TO CHANGE .background-fill */
     margin: 0 auto;
-    padding: 0 100px;
+    padding: 0 100px; /* REMEMBER TO CHANGE .background-fill */
 }
 
 .background-fill {
@@ -64,7 +64,15 @@ html, body {
         height: 120px;
     }
 
-        .menu-wrapper .menu-live-tile .live-tile-image {
+        .menu-wrapper .menu-live-tile .live-tile-front {
+            background-image: url('/images/logo.png');
+            background-position: top;
+            background-repeat: no-repeat;
+            /*background-position: 0 -20px;
+            http://avatar.xboxlive.com/avatar/workshop2/avatar-body.png*/
+        }
+
+        .menu-wrapper .menu-live-tile .live-tile-back {
             background-image: url('/images/liveTile.jpg');
             /*background-position: 0 -20px;
             http://avatar.xboxlive.com/avatar/workshop2/avatar-body.png*/
