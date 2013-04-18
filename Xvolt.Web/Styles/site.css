@@ -44,6 +44,9 @@ html, body {
 .menu-wrapper {
     color: white;
     padding-top: 10px;
+    /*background-image: url('/Images/logoText.png');
+    background-repeat: no-repeat;
+    background-position: 95px 30px;*/ /* --------- LOGO TEXT */
 }
 
     .menu-wrapper a {
