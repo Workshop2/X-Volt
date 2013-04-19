@@ -16,8 +16,6 @@ namespace Xvolt.Web
     {
         protected void Application_Start()
         {
-            StructuremapMvc.Start();
-
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
