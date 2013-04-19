@@ -5,9 +5,9 @@ using Xvolt.Domain.Repositories;
 
 namespace Xvolt.Web.DependencyResolution
 {
-    public static class Ioc
+    public static class IoC
     {
-        public static void Setup()
+        public static IContainer Initialize()
         {
             ControllerBuilder.Current.SetControllerFactory(new StructureMapControllerFactory());
 
@@ -16,6 +16,8 @@ namespace Xvolt.Web.DependencyResolution
                 x.For<INewsArticleRepository>().Use<NewsArticleRepository>();
                 x.For<IUserRepository>().Use<UserRepository>();
             });
+
+            return ObjectFactory.Container;
         }
     }
 }
