@@ -51,7 +51,8 @@ html, body {
 }
 
     .menu-wrapper .menu-logo {
-        display: none;
+        /*display: none;*/
+        margin-top: 25px;
     }
 
     .menu-wrapper a {
@@ -60,9 +61,9 @@ html, body {
 
     .menu-wrapper .menu-live-tile {
         background-color: #1BA1E2;
-        float: right;
         width: 120px;
         height: 120px;
+        float: right;
     }
 
         .menu-wrapper .menu-live-tile .live-tile-front {
@@ -82,17 +83,17 @@ html, body {
     .menu-wrapper .menu-links-outer {
         margin-right: 130px;
         /*margin-top: 10px;*/
-        height: 120px;
-        position: relative;
+        /*height: 120px;*/
+        /*position: relative;*/
     }
 
         .menu-wrapper .menu-links-outer .menu-links-inner {
             background-color: #1BA1E2;
-            position: absolute;
+            width: 100%;
+            /*position: absolute;
             bottom: 0;
             left: 0;
-            margin-right: -15px;
-            width: 100%;
+            margin-right: -15px;*/
         }
 
             .menu-wrapper .menu-links-outer .menu-links-inner ul {
@@ -156,7 +157,7 @@ html, body {
 /*-----------------------------------------------------------------*/
 /*                         MEDIA QUERIES                           */
 /*-----------------------------------------------------------------*/
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1200px) {
     /* Removes the padding, makes everything 100% wide */
     .center {
         padding-left: 0;
@@ -175,16 +176,13 @@ html, body {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .menu-wrapper .menu-links-inner {
+@media screen and (max-width: 640px) {
+    /* Hides normal link menu and resizes the bar so it is still visible */
+    .menu-wrapper .menu-links-outer .menu-links-inner {
         height: 20px;
     }
 
-        .menu-wrapper .menu-links-inner ul {
+        .menu-wrapper .menu-links-outer .menu-links-inner ul {
             display: none;
         }
-
-    .menu-wrapper .menu-logo {
-        display: inline-block;
-    }
 }
