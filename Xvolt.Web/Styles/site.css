@@ -13,7 +13,7 @@ html, body {
 
 .center {
     max-width: 1200px;
-    min-width: 770px; /* REMEMBER TO CHANGE .background-fill */
+    /*min-width: 770px; */ /* REMEMBER TO CHANGE .background-fill */
     margin: 0 auto;
     padding: 0 100px; /* REMEMBER TO CHANGE .background-fill */
 }
@@ -22,7 +22,7 @@ html, body {
     /* REMEMBER TO CHANGE THIS WHEN CHANGING CENTER MIN-WIDTH / PADDING */
     /* (center.min-width + padding * 2) */
     /* 770 + (100*2) */
-    min-width: 970px;
+    /*min-width: 970px;*/
 }
 
 /*-----------------------------------------------------------------*/
@@ -44,10 +44,16 @@ html, body {
 .menu-wrapper {
     color: white;
     padding-top: 10px;
+
+    /* --------- LOGO TEXT */
     /*background-image: url('/Images/logoText.png');
     background-repeat: no-repeat;
-    background-position: 95px 30px;*/ /* --------- LOGO TEXT */
+    background-position: 95px 30px;*/ 
 }
+
+    .menu-wrapper .menu-logo {
+        display: none;
+    }
 
     .menu-wrapper a {
         text-decoration: none;
@@ -147,3 +153,39 @@ html, body {
         color: #E5E5E5;
         text-align: center;
     }
+
+/*-----------------------------------------------------------------*/
+/*                         MEDIA QUERIES                           */
+/*-----------------------------------------------------------------*/
+@media screen and (max-width: 970px) {
+    /* Removes the padding, makes everything 100% wide */
+    .center {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Removes the live tile */
+    .menu-wrapper .menu-links-outer {
+        margin-right: 0;
+    }
+
+    .menu-wrapper .menu-live-tile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-wrapper .menu-links-inner {
+        height: 20px;
+    }
+
+    .menu-wrapper .menu-links-inner ul {
+        display: none;
+    }
+
+    .menu-wrapper .menu-logo {
+        display: inline-block;
+    }
+}

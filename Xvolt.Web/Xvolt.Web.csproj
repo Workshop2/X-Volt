@@ -166,6 +166,7 @@
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\jquery.metrojs.js" />
+    <Content Include="Scripts\site.js" />
     <Content Include="Styles\background.css" />
     <Content Include="Styles\jquery.metrojs.css" />
     <Content Include="Styles\site.css" />

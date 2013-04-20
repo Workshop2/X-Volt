@@ -19,7 +19,7 @@ namespace Xvolt.Web
                 "~/Scripts/jquery.metrojs.js" 
             };
 
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(scripts));
+            bundles.Add(new ScriptBundle("~/bundles/jquery-script").Include(scripts));
 
             // CSS/Styles
             var styles = new[] 
@@ -32,6 +32,14 @@ namespace Xvolt.Web
 
         private static void SetupSiteBundle(BundleCollection bundles)
         {
+            // Javascript
+            var scripts = new[] 
+            { 
+                "~/Scripts/site.js", 
+            };
+
+            bundles.Add(new ScriptBundle("~/bundles/site-script").Include(scripts));
+
             // CSS/Styles
             var styles = new[] 
             { 
