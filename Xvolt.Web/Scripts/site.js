@@ -14,13 +14,15 @@ $(document).ready(function () {
     site.menuWrapper = $(".menu-wrapper .menu-icon");
     site.menuWrapper.wrap("<div class='js' />");
     site.menuWrapper.click(function () {
-        // todo
         $(".menu-mobile-dropdown").toggle();
+        site.mobileToggle = true;
     });
     
     $(window).resize(function () {
-        if (window.innerWidth > 640) {
+        // remove open menu when browser is sized above the visible boundary
+        if (window.innerWidth > 640 && site.mobileToggle) {
             site.mobileDropdown.removeAttr("style");
+            site.mobileToggle = false;
         }
     });
 });
