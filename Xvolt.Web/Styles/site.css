@@ -1,24 +1,28 @@
 ﻿/* Used for sticky footer */
 /* http://ryanfait.com/sticky-footer/layout.css */
-* {
+*
+{
     margin: 0;
 }
 
-html, body {
+html, body
+{
     padding: 0;
     margin: 0;
     font-family: "Segoe UI", "Segoe UI", "Lato", sans-serif;
     height: 100%; /* Used for sticky footer */
 }
 
-.center {
+.center
+{
     max-width: 1200px;
     /*min-width: 770px; */ /* REMEMBER TO CHANGE .background-fill */
     margin: 0 auto;
     padding: 0 100px; /* REMEMBER TO CHANGE .background-fill */
 }
 
-.background-fill {
+.background-fill
+{
     /* REMEMBER TO CHANGE THIS WHEN CHANGING CENTER MIN-WIDTH / PADDING */
     /* (center.min-width + padding * 2) */
     /* 770 + (100*2) */
@@ -28,7 +32,8 @@ html, body {
 /*-----------------------------------------------------------------*/
 /*                          SITE WRAPPER                           */
 /*-----------------------------------------------------------------*/
-.site-wrapper {
+.site-wrapper
+{
     min-height: 100%;
     height: auto !important;
     height: 100%;
@@ -41,7 +46,8 @@ html, body {
 /*-----------------------------------------------------------------*/
 
 
-.menu-wrapper {
+.menu-wrapper
+{
     color: white;
     padding-top: 10px;
     /* --------- LOGO TEXT */
@@ -50,55 +56,65 @@ html, body {
     background-position: 95px 30px;*/
 }
 
-    .menu-wrapper .menu-logo {
+    .menu-wrapper .menu-logo
+    {
         margin-top: 25px;
     }
 
-    .menu-wrapper .menu-icon {
+    .menu-wrapper .menu-icon
+    {
         display: none;
         background-color: #1BA1E2;
         padding: 7px;
         float: right;
     }
 
-    .menu-wrapper .menu-mobile .menu-icon:hover {
+    .menu-wrapper .menu-mobile .menu-icon:hover
+    {
         background-color: #1AB1E2;
         cursor: pointer;
     }
 
-    .menu-wrapper .menu-mobile .menu-icon img {
+    .menu-wrapper .menu-mobile .menu-icon img
+    {
         display: block;
     }
 
-    .menu-wrapper a {
+    .menu-wrapper a
+    {
         text-decoration: none;
     }
 
-    .menu-wrapper .menu-live-tile {
+    .menu-wrapper .menu-live-tile
+    {
         background-color: #1BA1E2;
         width: 120px;
         height: 120px;
         float: right;
     }
 
-        .menu-wrapper .menu-live-tile .live-tile-front {
+        .menu-wrapper .menu-live-tile .live-tile-front
+        {
             background-image: url('/images/logo.png');
             background-position: top;
             background-repeat: no-repeat;
         }
 
-        .menu-wrapper .menu-live-tile .live-tile-back {
+        .menu-wrapper .menu-live-tile .live-tile-back
+        {
             background-image: url('/images/liveTile.jpg');
         }
 
-    .menu-wrapper .menu-links-outer {
+    .menu-wrapper .menu-links-outer
+    {
         margin-right: 130px;
         /*margin-top: 10px;*/
         /*height: 120px;*/
         /*position: relative;*/
     }
 
-        .menu-wrapper .menu-links-outer .menu-links-inner {
+        .menu-wrapper .menu-links-outer .menu-links-inner
+        {
             background-color: #1BA1E2;
             width: 100%;
             /*position: absolute;
@@ -107,7 +123,8 @@ html, body {
             margin-right: -15px;*/
         }
 
-            .menu-wrapper .menu-links-outer .menu-links-inner ul {
+            .menu-wrapper .menu-links-outer .menu-links-inner ul
+            {
                 display: block;
                 margin: 0;
                 padding: 0;
@@ -115,31 +132,36 @@ html, body {
                 overflow: hidden;
             }
 
-                .menu-wrapper .menu-links-outer .menu-links-inner ul li {
+                .menu-wrapper .menu-links-outer .menu-links-inner ul li
+                {
                     float: left;
                     list-style: none;
                     margin-right: 14.285714285714286px;
                 }
 
-                    .menu-wrapper .menu-links-outer .menu-links-inner ul li a {
+                    .menu-wrapper .menu-links-outer .menu-links-inner ul li a
+                    {
                         display: block;
                         padding: 0 20px;
                         white-space: nowrap;
                         color: #fff;
                     }
 
-                    .menu-wrapper .menu-links-outer .menu-links-inner ul li:hover {
+                    .menu-wrapper .menu-links-outer .menu-links-inner ul li:hover
+                    {
                         background-color: #1AB1E2;
                     }
 
 /* Hidden dropdown */
-.menu-mobile-dropdown {
+.menu-mobile-dropdown
+{
     display: none;
     background-color: #333333;
     color: white;
 }
 
-    .menu-mobile-dropdown ul {
+    .menu-mobile-dropdown ul
+    {
         display: block;
         margin: 0;
         padding: 0;
@@ -147,11 +169,13 @@ html, body {
         overflow: hidden;
     }
 
-        .menu-mobile-dropdown ul li {
+        .menu-mobile-dropdown ul li
+        {
             list-style: none;
         }
 
-            .menu-mobile-dropdown ul li a {
+            .menu-mobile-dropdown ul li a
+            {
                 text-decoration: none;
                 display: block;
                 padding: 0 20px;
@@ -159,7 +183,8 @@ html, body {
                 color: #fff;
             }
 
-            .menu-mobile-dropdown ul li:hover {
+            .menu-mobile-dropdown ul li:hover
+            {
                 background-color: #1AB1E2;
             }
 
@@ -167,30 +192,35 @@ html, body {
 /*                            CONTENT                              */
 /*-----------------------------------------------------------------*/
 
-.content-wrapper {
+.content-wrapper
+{
     background-color: #E5E5E5;
     min-height: 600px;
     width: 100%;
     padding-bottom: 30px;
 }
 
-    .content-wrapper .content-inner {
+    .content-wrapper .content-inner
+    {
         padding-top: 10px;
     }
 
 /*-----------------------------------------------------------------*/
 /*                            FOOTER                               */
 /*-----------------------------------------------------------------*/
-.footer-outer, .push {
+.footer-outer, .push
+{
     height: 50px;
     /*width: 100%;*/
 }
 
-.footer-outer {
+.footer-outer
+{
     background-color: #333333;
 }
 
-    .footer-outer .footer-inner {
+    .footer-outer .footer-inner
+    {
         padding-top: 12px;
         color: #E5E5E5;
         text-align: center;
@@ -199,36 +229,46 @@ html, body {
 /*-----------------------------------------------------------------*/
 /*                         MEDIA QUERIES                           */
 /*-----------------------------------------------------------------*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px)
+{
     /* Removes the padding, makes everything 100% wide */
-    .center {
+    .center
+    {
         padding-left: 0;
         padding-right: 0;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px)
+{
     /* Removes the live tile */
-    .menu-wrapper .menu-links-outer {
+    .menu-wrapper .menu-links-outer
+    {
         margin-right: 0;
     }
 
-    .menu-wrapper .menu-live-tile {
+    .menu-wrapper .menu-live-tile
+    {
         display: none;
     }
 }
 
-@media screen and (max-width: 640px) {
+/* smallest screen */
+@media screen and (max-width: 640px)
+{
     /* Hides normal link menu and resizes the bar so it is still visible */
-    .menu-wrapper .menu-links-outer .js {
+    .menu-wrapper .menu-links-outer .js
+    {
         height: 15px;
     }
 
-        .menu-wrapper .menu-links-outer .js ul {
+        .menu-wrapper .menu-links-outer .js ul
+        {
             display: none;
         }
 
-    .menu-wrapper .js .menu-icon {
+    .menu-wrapper .js .menu-icon
+    {
         display: inline-block;
     }
 }

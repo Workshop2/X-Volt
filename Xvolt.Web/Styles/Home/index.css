@@ -1,7 +1,31 @@
-﻿.newsTile {
-    float: left;
+﻿.front-page
+{
 }
 
-.newsTile img {
-    width: 150px;
+    .front-page .item
+    {
+        float: left;
+    }
+
+        .front-page .item .title
+        {
+        }
+
+        .front-page .item .image
+        {
+            width: 250px;
+        }
+
+            .front-page .item .image img
+            {
+                width: 100%;
+            }
+
+@media screen and (max-width: 640px)
+{
+    .front-page .item
+    {
+        float: none;
+        width: 100%;
+    }
 }
