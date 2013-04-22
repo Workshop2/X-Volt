@@ -35,7 +35,7 @@ namespace Xvolt.Web
             // Javascript
             var scripts = new[] 
             { 
-                "~/Scripts/site.js", 
+                "~/Scripts/site.js"
             };
 
             bundles.Add(new ScriptBundle("~/bundles/site-script").Include(scripts));
@@ -44,7 +44,8 @@ namespace Xvolt.Web
             var styles = new[] 
             { 
                 "~/Styles/site.css",
-                "~/Styles/background.css"
+                "~/Styles/background.css", 
+                "~/Styles/Home/index.css", 
             };
 
             bundles.Add(new StyleBundle("~/bundles/site-style").Include(styles));

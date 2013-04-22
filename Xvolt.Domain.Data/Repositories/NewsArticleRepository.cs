@@ -17,6 +17,7 @@ namespace Xvolt.Domain.Data.Repositories
         {
             var userRepo = new UserRepository();
             var contentRepo = new NewsContentRepository();
+            var imageRepo = new ImageRepository();
 
             return new List<NewsArticle>
             {
@@ -27,7 +28,8 @@ namespace Xvolt.Domain.Data.Repositories
                     OriginalPublishDate = DateTime.Now,
                     Visible = true,
                     Content = contentRepo.Get(1),
-                    Id = 1
+                    Id = 1,
+                    Images = imageRepo.ListForNewsArticle(1)
                 },
                 new NewsArticle
                 {
@@ -36,7 +38,8 @@ namespace Xvolt.Domain.Data.Repositories
                     OriginalPublishDate = DateTime.Now,
                     Visible = true,
                     Content = contentRepo.Get(2),
-                    Id = 2
+                    Id = 2,
+                    Images = imageRepo.ListForNewsArticle(2)
                 },
                 new NewsArticle
                 {
@@ -45,7 +48,8 @@ namespace Xvolt.Domain.Data.Repositories
                     OriginalPublishDate = DateTime.Now,
                     Visible = true,
                     Content = contentRepo.Get(3),
-                    Id = 3
+                    Id = 3,
+                    Images = imageRepo.ListForNewsArticle(3)
                 }
             }.AsQueryable();
         }

@@ -5,7 +5,16 @@
 }
 
 <div class="center">
-    <h2>Index</h2>
+    @foreach (var item in Model.NewsItems)
+    {
+        <div class="newsTile">
+            @item.Title
+            <img src="@Url.Content(item.Images.First().Filename)" alt="@item.Title" />
+        </div>
+    }
+
+
+    @*    <h2>Index</h2>
 
     <table>
         <tr>
@@ -25,5 +34,5 @@
             </tr>
         }
 
-    </table>
+    </table>*@
 </div>

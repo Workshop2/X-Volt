@@ -17,6 +17,11 @@ namespace Xvolt.Domain.Data.Repositories
             throw new System.NotImplementedException();
         }
 
+        public IEnumerable<Image> ListForNewsArticle(int newsArticleId)
+        {
+            return new List<Image> { new Image { Filename = "~/Images/DummyImages/putio_tile.png" } };
+        }
+
         public void Save(Image user)
         {
             throw new System.NotImplementedException();

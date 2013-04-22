@@ -159,6 +159,7 @@
     <None Include="Properties\PublishProfiles\x-volt - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\x-volt - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Images\DummyImages\putio_tile.png" />
     <Content Include="Images\liveTile.jpg" />
     <Content Include="Images\liveTile.png" />
     <Content Include="Images\logoText.png" />
@@ -169,6 +170,7 @@
     <Content Include="Scripts\jquery.metrojs.js" />
     <Content Include="Scripts\site.js" />
     <Content Include="Styles\background.css" />
+    <Content Include="Styles\Home\index.css" />
     <Content Include="Styles\jquery.metrojs.css" />
     <Content Include="Styles\site.css" />
     <Content Include="Web.config" />
