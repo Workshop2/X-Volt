@@ -14,7 +14,7 @@ $(document).ready(function () {
     site.menuWrapper = $(".menu-wrapper .menu-icon");
     site.menuWrapper.wrap("<div class='js' />");
     site.menuWrapper.click(function () {
-        $(".menu-mobile-dropdown").toggle();
+        $(".menu-mobile-dropdown").slideToggle(250);
         site.mobileToggle = true;
     });
     
