@@ -4,16 +4,16 @@
 
     .front-page .item
     {
-        float: left;
     }
 
-        .front-page .item .title
+        .front-page .item h1
         {
+            font-size: 2.5em; /* 40px (target) / 16px (default) = */
         }
 
-        .front-page .item .image
+        /*.front-page .item .image
         {
-            width: 250px;
+            width: 400px;
         }
 
             .front-page .item .image img
@@ -27,5 +27,18 @@
     {
         float: none;
         width: 100%;
+        padding: 0;
     }
-}
+
+        .front-page .item .image
+        {
+            text-align: center;
+            display: inline;
+        }
+
+        .front-page .item .image img
+        {
+            max-width: 400px;
+            display: inline;
+        }
+}*/

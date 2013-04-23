@@ -8,6 +8,7 @@ namespace Xvolt.Web
         {
             SetupJqueryBundle(bundles);
             SetupSiteBundle(bundles);
+            SetupHomeBundle(bundles);
         }
 
         private static void SetupJqueryBundle(BundleCollection bundles)
@@ -44,11 +45,22 @@ namespace Xvolt.Web
             var styles = new[] 
             { 
                 "~/Styles/site.css",
-                "~/Styles/background.css", 
-                "~/Styles/Home/index.css", 
+                "~/Styles/site.media.queries.css" ,
+                "~/Styles/background.css" 
             };
 
             bundles.Add(new StyleBundle("~/bundles/site-style").Include(styles));
+        }
+
+        private static void SetupHomeBundle(BundleCollection bundles)
+        {
+            // CSS/Styles
+            var styles = new[] 
+            { 
+                "~/Styles/Home/index.css"
+            };
+
+            bundles.Add(new StyleBundle("~/bundles/home-style").Include(styles));
         }
     }
 }

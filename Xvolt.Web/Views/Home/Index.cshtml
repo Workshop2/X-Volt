@@ -1,21 +1,27 @@
-﻿@model Xvolt.Web.ViewModels.Home.IndexViewModel
+﻿@using System.Web.Optimization
+@model Xvolt.Web.ViewModels.Home.IndexViewModel
 
 @{
     ViewBag.Title = "Index";
 }
 
+@section Header
+{
+    @Styles.Render("~/bundles/home-style")
+}
+
 <div class="center">
-    <div class="front-page">
+    <!--<div class="front-page">
         @foreach (var item in Model.NewsItems)
         {
             <div class="item">
-                <div class="title">
+                <h1>
                     @item.Title
-                </div>
+                </h1>
                 <div class="image">
                     <img src="@Url.Content(item.Images.First().Filename)" alt="@item.Title" />
                 </div>
             </div>
         }
-    </div>
+    </div>-->
 </div>
