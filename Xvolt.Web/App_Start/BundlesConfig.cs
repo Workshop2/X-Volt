@@ -45,6 +45,8 @@ namespace Xvolt.Web
             var styles = new[] 
             { 
                 "~/Styles/site.css",
+                "~/Styles/menu.css",
+                "~/Styles/footer.css",
                 "~/Styles/site.media.queries.css" ,
                 "~/Styles/background.css" 
             };

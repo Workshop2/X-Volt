@@ -170,6 +170,8 @@
     <Content Include="Scripts\jquery.metrojs.js" />
     <Content Include="Scripts\site.js" />
     <Content Include="Styles\background.css" />
+    <Content Include="Styles\menu.css" />
+    <Content Include="Styles\footer.css" />
     <Content Include="Styles\site.media.queries.css" />
     <Content Include="Styles\Home\index.css" />
     <Content Include="Styles\jquery.metrojs.css" />
