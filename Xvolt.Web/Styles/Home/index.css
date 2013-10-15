@@ -11,6 +11,10 @@
             font-size: 2.5em; /* 40px (target) / 16px (default) = */
         }
 
+        .front-page img {
+            max-width: 100%;
+        }
+
         /*.front-page .item .image
         {
             width: 400px;
