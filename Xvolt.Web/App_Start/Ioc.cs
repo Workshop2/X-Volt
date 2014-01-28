@@ -1,9 +1,8 @@
 ﻿using System.Web.Mvc;
 using StructureMap;
-using Xvolt.Domain.Data.Repositories;
-using Xvolt.Domain.Repositories;
+using Xvolt.Web.DependencyResolution;
 
-namespace Xvolt.Web.DependencyResolution
+namespace Xvolt.Web.App_Start
 {
     public static class IoC
     {
@@ -13,8 +12,13 @@ namespace Xvolt.Web.DependencyResolution
 
             ObjectFactory.Initialize(x =>
             {
-                x.For<INewsArticleRepository>().Use<NewsArticleRepository>();
-                x.For<IUserRepository>().Use<UserRepository>();
+                x.Scan(y =>
+                {
+                    y.TheCallingAssembly();
+                    y.AssembliesFromApplicationBaseDirectory();
+                    y.WithDefaultConventions();
+                });
+
             });
 
             return ObjectFactory.Container;

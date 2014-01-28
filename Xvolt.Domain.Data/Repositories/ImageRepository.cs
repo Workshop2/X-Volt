@@ -34,7 +34,6 @@ namespace Xvolt.Domain.Data.Repositories
 
         public void Dispose()
         {
-            throw new System.NotImplementedException();
         }
     }
 }

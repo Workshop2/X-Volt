@@ -57,6 +57,11 @@ namespace Xvolt.Domain.Data.Repositories
             throw new System.NotImplementedException();
         }
 
+        public User GetUserForNewsArticle(int articleId)
+        {
+            throw new System.NotImplementedException();
+        }
+
         public void Dispose()
         {
             throw new System.NotImplementedException();

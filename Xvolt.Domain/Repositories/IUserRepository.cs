@@ -5,6 +5,6 @@ namespace Xvolt.Domain.Repositories
 {
     public interface IUserRepository : IRepository<User>
     {
-
+        User GetUserForNewsArticle(int articleId);
     }
 }

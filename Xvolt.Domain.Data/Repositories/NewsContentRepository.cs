@@ -60,7 +60,6 @@ Phasellus tristique sem eget nisi iaculis dignissim. Nam ultrices est non mauris
         
         public void Dispose()
         {
-            throw new System.NotImplementedException();
         }
     }
 }
