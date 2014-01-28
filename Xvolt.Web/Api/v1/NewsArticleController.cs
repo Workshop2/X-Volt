@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
-using Xvolt.Domain.Models;
+using Xvolt.Domain.Entities;
 using Xvolt.Domain.Repositories;
 
 namespace Xvolt.Web.Api.v1

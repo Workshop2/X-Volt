@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Xvolt.Domain.Models
+namespace Xvolt.Domain.Entities
 {
     public class NewsArticle
     {

@@ -44,7 +44,6 @@
     <Compile Include="Repositories\NewsArticleRepository.cs" />
     <Compile Include="Repositories\NewsContentRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
-    <Compile Include="RepositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Xvolt.Domain\Xvolt.Domain.csproj">
