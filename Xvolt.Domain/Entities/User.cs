@@ -1,6 +1,6 @@
 ﻿using Xvolt.Domain.Enums;
 
-namespace Xvolt.Domain.Models
+namespace Xvolt.Domain.Entities
 {
     public class User
     {

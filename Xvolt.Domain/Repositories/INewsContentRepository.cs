@@ -1,4 +1,4 @@
-﻿using Xvolt.Domain.Models;
+﻿using Xvolt.Domain.Entities;
 
 namespace Xvolt.Domain.Repositories
 {

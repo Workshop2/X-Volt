@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Xvolt.Domain.Entities;
 using Xvolt.Domain.Enums;
-using Xvolt.Domain.Models;
 using Xvolt.Domain.Repositories;
 
 namespace Xvolt.Domain.Data.Repositories

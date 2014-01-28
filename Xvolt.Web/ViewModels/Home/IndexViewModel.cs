@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Xvolt.Domain.Models;
+using Xvolt.Domain.Entities;
 using Xvolt.Domain.Repositories;
 
 namespace Xvolt.Web.ViewModels.Home

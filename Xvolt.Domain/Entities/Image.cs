@@ -1,4 +1,4 @@
-﻿namespace Xvolt.Domain.Models
+﻿namespace Xvolt.Domain.Entities
 {
     public class Image
     {
