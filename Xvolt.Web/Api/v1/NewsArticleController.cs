@@ -5,7 +5,7 @@ using Xvolt.Domain.Repositories;
 
 namespace Xvolt.Web.Api.v1
 {
-    public class NewsArticleController : ApiController, IApi<NewsArticle>
+    public class NewsArticleController : ApiBase<NewsArticle>
     {
         private INewsArticleRepository Repository { get; set; }
 
@@ -15,31 +15,31 @@ namespace Xvolt.Web.Api.v1
         }
 
         // GET api/newsarticle
-        public IEnumerable<NewsArticle> Get()
+        public override IEnumerable<NewsArticle> Get()
         {
             return Repository.List();
         }
 
         // GET api/newsarticle/5
-        public NewsArticle Get(int id)
+        public override NewsArticle Get(int id)
         {
             return Repository.Get(id);
         }
 
-        // POST api/newsarticle
-        public void Post([FromBody]NewsArticle value)
+        // POST api/newsarticle override
+        public override void Post([FromBody]NewsArticle value)
         {
             Repository.Save(value);
         }
 
         // PUT api/newsarticle/5
-        public void Put(int id, [FromBody]NewsArticle value)
+        public override void Put(int id, [FromBody]NewsArticle value)
         {
             Repository.Save(value);
         }
 
         // DELETE api/newsarticle/5
-        public void Delete(int id)
+        public override void Delete(int id)
         {
             var toDelete = Repository.Get(id);
             Repository.Delete(toDelete);

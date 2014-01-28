@@ -6,6 +6,7 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Xvolt.Web.App_Start;
 
 namespace Xvolt.Web
 {
@@ -15,8 +16,6 @@ namespace Xvolt.Web
     {
         protected void Application_Start()
         {
-            DependencyResolution.Ioc.Setup();
-
             AreaRegistration.RegisterAllAreas();
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);

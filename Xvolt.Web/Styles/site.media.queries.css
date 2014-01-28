@@ -1,0 +1,43 @@
+﻿@media screen and (max-width: 1200px)
+{
+    /* Removes the padding, makes everything 100% wide */
+    .center
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    /* Removes the live tile */
+    .menu-wrapper .menu-links-outer
+    {
+        margin-right: 0;
+    }
+
+    .menu-wrapper .menu-live-tile
+    {
+        display: none;
+    }
+}
+
+/* smallest screen */
+@media screen and (max-width: 640px)
+{
+    /* Hides normal link menu and resizes the bar so it is still visible */
+    .menu-wrapper .menu-links-outer .js
+    {
+        height: 15px;
+    }
+
+        .menu-wrapper .menu-links-outer .js ul
+        {
+            display: none;
+        }
+
+    .menu-wrapper .js .menu-icon
+    {
+        display: inline-block;
+    }
+}

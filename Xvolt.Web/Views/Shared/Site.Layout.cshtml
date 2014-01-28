@@ -3,28 +3,36 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/bundles/site-style")
     @Styles.Render("~/bundles/jquery-style")
-    @Scripts.Render("~/bundles/jquery")
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".live-tile, .flip-list").not(".exclude").liveTile();
-        });
-    </script>
+    @Scripts.Render("~/bundles/jquery-script")
+    @Scripts.Render("~/bundles/site-script")
+
+    @RenderSection("Header", required: false)
 </head>
 <body class="gradient">
     <div class="site-wrapper">
         <div class="menu-wrapper center">
-            <div class="menu-live-tile live-tile blue" data-mode="flip" data-delay="5000" data-speed="300" data-initdelay="2000">
-                <div class="live-tile-front">
-                    <span class="tile-title">X-Volt Studios</span>
+            <a href="@Url.Content("~/")">
+                <div class="menu-live-tile live-tile blue" data-mode="flip" data-delay="5000" data-speed="300" data-initdelay="2000">
+                    <div class="live-tile-front">
+                        <span class="tile-title">X-Volt Studios</span>
+                    </div>
+                    <div class="live-tile-back">
+                        <span class="tile-title">Simon Colmer</span>
+                    </div>
                 </div>
-                <div class="live-tile-back">
-                    <span class="tile-title">Simon Colmer</span>
+            </a>
+            <div class="menu-mobile">
+                <div class="menu-icon">
+                    <img src="@Url.Content("~/Images/menu.png")" alt="Menu Dropdown" />
                 </div>
+            </div>
+            <div class="menu-logo">
+                <img src="@Url.Content("~/Images/logoText.png")" alt="X-Volt Logo" />
             </div>
             <div class="menu-links-outer">
                 <div class="menu-links-inner">
@@ -39,6 +47,7 @@
                 </div>
             </div>
         </div>
+        <div class="menu-mobile-dropdown"></div>
         <div class="content-wrapper background-fill">
             <div class="content-inner">
                 @RenderBody()
