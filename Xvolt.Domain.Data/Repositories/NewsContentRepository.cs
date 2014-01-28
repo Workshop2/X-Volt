@@ -5,14 +5,14 @@ using Xvolt.Domain.Repositories;
 
 namespace Xvolt.Domain.Data.Repositories
 {
-    public class NewsContentRepository : RepositoryBase, INewsContentRepository
+    public class NewsContentRepository : INewsContentRepository
     {
         public NewsContent Get(int id)
         {
             return List().First(x => x.Id == id);
         }
 
-        public IQueryable<NewsContent> List()
+        public IEnumerable<NewsContent> List()
         {
             return new List<NewsContent>
             {
@@ -34,20 +34,15 @@ namespace Xvolt.Domain.Data.Repositories
                     FullArticle = FullText,
                     TrimmedArticle = TrimmedText
                 }
-            }.AsQueryable();
+            };
         }
 
-        public void Save(NewsContent user)
+        public void Save(NewsContent entity)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Delete(NewsContent user)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public bool SaveChanges()
+        public void Delete(NewsContent entity)
         {
             throw new System.NotImplementedException();
         }
@@ -62,5 +57,10 @@ Nulla facilisi. Mauris quis neque eget ipsum scelerisque ornare ut et lorem. Pra
 Suspendisse potenti. Quisque tincidunt molestie odio, ut fermentum magna malesuada sit amet. Nunc erat purus, faucibus et feugiat eu, pharetra vel eros. Pellentesque non tortor sed mi aliquet gravida. Vivamus et nibh id sapien pulvinar venenatis at eu sem. Nunc erat diam, convallis vitae suscipit in, semper ut massa. Integer porta dictum tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec posuere neque ac magna sodales id eleifend urna commodo. Cras eu facilisis ante. In lorem augue, mattis et ullamcorper eget, imperdiet eu lectus. Nulla neque sem, volutpat sit amet vehicula at, pellentesque a velit.
 
 Phasellus tristique sem eget nisi iaculis dignissim. Nam ultrices est non mauris venenatis tempor. Nullam suscipit dolor a ligula suscipit molestie. Integer sit amet dolor leo. Fusce commodo felis pretium ante sodales eu scelerisque felis convallis. Phasellus ultrices arcu eget est tristique nec vulputate libero dapibus. In hac habitasse platea dictumst. Etiam et tortor nec ligula mollis tempus vitae vitae libero. Praesent eros urna, mollis id egestas ut, auctor nec justo. Vivamus at dui mi, at mattis mauris. Morbi ante orci, lacinia quis bibendum eget, eleifend non nisl.";
+        
+        public void Dispose()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

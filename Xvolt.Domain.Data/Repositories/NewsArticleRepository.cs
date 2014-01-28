@@ -6,14 +6,14 @@ using Xvolt.Domain.Repositories;
 
 namespace Xvolt.Domain.Data.Repositories
 {
-    public class NewsArticleRepository : RepositoryBase, INewsArticleRepository
+    public class NewsArticleRepository : INewsArticleRepository
     {
         public NewsArticle Get(int id)
         {
             return List().First(x => x.Id == id);
         }
 
-        public IQueryable<NewsArticle> List()
+        public IEnumerable<NewsArticle> List()
         {
             var userRepo = new UserRepository();
             var contentRepo = new NewsContentRepository();
@@ -51,20 +51,20 @@ namespace Xvolt.Domain.Data.Repositories
                     Id = 3,
                     Images = imageRepo.ListForNewsArticle(3)
                 }
-            }.AsQueryable();
+            };
         }
 
-        public void Save(NewsArticle user)
+        public void Save(NewsArticle entity)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Delete(NewsArticle user)
+        public void Delete(NewsArticle entity)
         {
             throw new System.NotImplementedException();
         }
 
-        public bool SaveChanges()
+        public void Dispose()
         {
             throw new NotImplementedException();
         }
