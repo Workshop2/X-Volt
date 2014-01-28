@@ -8,19 +8,30 @@ namespace Xvolt.Domain.Services
     public class NewsService : INewsService
     {
         private readonly INewsArticleRepository _newsArticleRepository;
+        private readonly INewsContentRepository _newsContentRepository;
         private readonly IUserRepository _userRepository;
         private readonly IImageRepository _imageRepository;
 
-        public NewsService(INewsArticleRepository newsArticleRepository, IUserRepository userRepository, IImageRepository imageRepository)
+        public NewsService(INewsArticleRepository newsArticleRepository, INewsContentRepository newsContentRepository, IUserRepository userRepository, IImageRepository imageRepository)
         {
             _newsArticleRepository = newsArticleRepository;
+            _newsContentRepository = newsContentRepository;
             _userRepository = userRepository;
             _imageRepository = imageRepository;
         }
 
         public IEnumerable<NewsArticle> GetNewsArticles()
         {
-            throw new System.NotImplementedException();
+            IEnumerable<NewsArticle> newsArticles = _newsArticleRepository.List();
+
+            foreach (NewsArticle newsArticle in newsArticles)
+            {
+                newsArticle.Author = _userRepository.Get(newsArticle.Id);
+                newsArticle.Content = _newsContentRepository.Get(newsArticle.Id);
+                newsArticle.Images = _imageRepository.ListForNewsArticle(newsArticle.Id);
+
+                yield return newsArticle;
+            }
         }
 
         public void Dispose()
@@ -28,6 +39,11 @@ namespace Xvolt.Domain.Services
             if (_newsArticleRepository != null)
             {
                 _newsArticleRepository.Dispose();
+            }
+
+            if (_newsContentRepository != null)
+            {
+                _newsContentRepository.Dispose();
             }
 
             if (_userRepository != null)

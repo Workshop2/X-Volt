@@ -15,41 +15,28 @@ namespace Xvolt.Domain.Data.Repositories
 
         public IEnumerable<NewsArticle> List()
         {
-            var userRepo = new UserRepository();
-            var contentRepo = new NewsContentRepository();
-            var imageRepo = new ImageRepository();
-
             return new List<NewsArticle>
             {
                 new NewsArticle
                 {
-                    Author = userRepo.Get(1),
                     Title = "News Item 1",
                     OriginalPublishDate = DateTime.Now,
                     Visible = true,
-                    Content = contentRepo.Get(1),
                     Id = 1,
-                    Images = imageRepo.ListForNewsArticle(1)
                 },
                 new NewsArticle
                 {
-                    Author = userRepo.Get(2),
                     Title = "News Item 2",
                     OriginalPublishDate = DateTime.Now,
                     Visible = true,
-                    Content = contentRepo.Get(2),
                     Id = 2,
-                    Images = imageRepo.ListForNewsArticle(2)
                 },
                 new NewsArticle
                 {
-                    Author = userRepo.Get(3),
                     Title = "News Item 3",
                     OriginalPublishDate = DateTime.Now,
                     Visible = true,
-                    Content = contentRepo.Get(3),
                     Id = 3,
-                    Images = imageRepo.ListForNewsArticle(3)
                 }
             };
         }
