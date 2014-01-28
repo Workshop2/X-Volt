@@ -19,7 +19,7 @@ namespace Xvolt.Domain.Data.Repositories
             {
                 new NewsArticle
                 {
-                    Title = "News Item 1",
+                    Title = "News Item 1 (Test)",
                     OriginalPublishDate = DateTime.Now,
                     Visible = true,
                     Id = 1,
