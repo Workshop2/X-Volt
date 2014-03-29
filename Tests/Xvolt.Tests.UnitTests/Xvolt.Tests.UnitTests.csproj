@@ -61,12 +61,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cache\Services\NewsServiceCacheTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stubs\NewsServiceStub.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Xvolt.Domain.Cache\Xvolt.Domain.Cache.csproj">
+      <Project>{7b0cf58c-8ab7-465c-be0b-1020b191f00b}</Project>
+      <Name>Xvolt.Domain.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Xvolt.Domain\Xvolt.Domain.csproj">
+      <Project>{30adb576-d12e-47d2-8058-57332487da24}</Project>
+      <Name>Xvolt.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Xvolt.Web\Xvolt.Web.csproj">
       <Project>{c6ee666f-8c78-47e4-a305-6cabe7bea49d}</Project>
       <Name>Xvolt.Web</Name>

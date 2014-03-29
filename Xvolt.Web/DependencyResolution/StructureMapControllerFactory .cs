@@ -16,10 +16,10 @@ namespace Xvolt.Web.DependencyResolution
 
                 return (Controller)ObjectFactory.GetInstance(controllerType);
             }
-            catch (StructureMapException)
+            catch (StructureMapException ex)
             {
                 System.Diagnostics.Debug.WriteLine(ObjectFactory.WhatDoIHave());
-                throw new Exception(ObjectFactory.WhatDoIHave());
+                throw new Exception(ObjectFactory.WhatDoIHave(), ex);
             }
         }
     }

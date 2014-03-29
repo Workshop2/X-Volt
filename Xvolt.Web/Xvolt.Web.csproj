@@ -137,6 +137,7 @@
     <Compile Include="App_Start\StructuremapMvc.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="App_Start\IoC.cs" />
+    <Compile Include="DependencyResolution\Decorator.cs" />
     <Compile Include="DependencyResolution\StructureMapControllerFactory .cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyResolver.cs" />
     <Compile Include="DependencyResolution\StructureMapDependencyScope.cs" />
@@ -200,6 +201,10 @@
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Xvolt.Domain.Cache\Xvolt.Domain.Cache.csproj">
+      <Project>{7b0cf58c-8ab7-465c-be0b-1020b191f00b}</Project>
+      <Name>Xvolt.Domain.Cache</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Xvolt.Domain.Data\Xvolt.Domain.Data.csproj">
       <Project>{56dac7af-7912-495c-a842-b0aafbc81c2a}</Project>
       <Name>Xvolt.Domain.Data</Name>
